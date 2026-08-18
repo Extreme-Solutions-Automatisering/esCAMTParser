@@ -1,15 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
+    <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 	  <Company>Extreme Solutions</Company>
-	  <Version>2511</Version>
 	  <Product>CAMT053 Parser</Product>
-	  <Copyright>Copyright - Extreme Solutions - 2025 - All rights reserved</Copyright>
-	  <AssemblyVersion>1.0.2511.47001</AssemblyVersion>
-	  <FileVersion>1.0.2511.47001</FileVersion>
+	  <Copyright>Copyright - Extreme Solutions - 2026 - All rights reserved</Copyright>
+      <VersionDate>$([System.DateTime]::UtcNow.ToString('yyMM'))</VersionDate>
+      <BuildNumber>$([System.Int32]::Parse($([System.DateTime]::Now.Subtract($([System.DateTime]::Parse($([System.DateTime]::Now.ToString('yyyy-MM-01'))))).TotalMinutes.ToString('F0'))))</BuildNumber>
+      <Version>$(VersionDate)</Version>
+      <AssemblyVersion>1.1.$(VersionDate).$(BuildNumber)</AssemblyVersion>
+      <FileVersion>1.1.$(VersionDate).$(BuildNumber)</FileVersion>
 	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	  <Title>Extreme Solutions CAMT053 Parser library</Title>
 	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -35,7 +37,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="G:\OneDrive\OneDrive - Extreme Solutions\Desktop\esParser.png">
+    <None Include="esParser.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>

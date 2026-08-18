@@ -5,8 +5,6 @@ VisualStudioVersion = 17.14.36202.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "esCAMTParser", "esCAMTParser.csproj", "{28073309-4ED2-4661-BEFF-AE0560784CA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "esCAMTTestUtility", "..\..\esCAMTTestUtility\esCAMTTestUtility.csproj", "{AEC39CCA-B6D6-409E-8DDA-335B0F351CC4}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{28073309-4ED2-4661-BEFF-AE0560784CA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28073309-4ED2-4661-BEFF-AE0560784CA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28073309-4ED2-4661-BEFF-AE0560784CA8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AEC39CCA-B6D6-409E-8DDA-335B0F351CC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AEC39CCA-B6D6-409E-8DDA-335B0F351CC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AEC39CCA-B6D6-409E-8DDA-335B0F351CC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AEC39CCA-B6D6-409E-8DDA-335B0F351CC4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
